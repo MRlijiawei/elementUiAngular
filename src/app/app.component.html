@@ -3,18 +3,114 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<h2>Element Angular</h2>
+<div el-row gutter="20">
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple">1</div>
+  </div>
+  <div el-col span="6">
+    <div class="grid-content bg-purple">2</div>
+  </div>
+  <div el-col span="6">
+    <div class="grid-content bg-purple">3</div>
+  </div>
+  <div el-col span="6">
+    <div class="grid-content bg-purple">4</div>
+  </div>
+</div>
 
+<div el-row gutter="20">
+  <div el-col [span]="16">
+    <div class="grid-content bg-purple"></div>
+  </div>
+  <div el-col [span]="8">
+    <div class="grid-content bg-purple"></div>
+  </div>
+</div>
+<div el-row :gutter="5">
+  <div el-col [span]="4">
+    <div class="grid-content bg-purple"></div>
+  </div>
+  <div el-col [span]="16">
+    <div class="grid-content bg-purple"></div>
+  </div>
+  <div el-col [span]="4">
+    <div class="grid-content bg-purple"></div>
+  </div>
+</div>
+
+<div el-row type="flex" class="row-bg">
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple-light"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+</div>
+<div el-row type="flex" class="row-bg" justify="center">
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple-light"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+</div>
+<div el-row type="flex" class="row-bg" justify="end">
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple-light"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+</div>
+<div el-row type="flex" class="row-bg" justify="space-between">
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple-light"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+</div>
+<div el-row type="flex" class="row-bg" justify="space-around">
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple-light"></div>
+  </div>
+  <div el-col [span]="6">
+    <div class="grid-content bg-purple"></div>
+  </div>
+</div>
+
+<div el-container direction="vertical" class="demo-box">
+  <div el-header>Header</div>
+  <div el-container>
+    <div el-aside width="200px">Aside</div>
+    <div el-container direction="vertical">
+      <div el-main>Main</div>
+      <div el-footer>Footer</div>
+    </div>
+  </div>
+</div>
+
+<span class="icons">
+  <i class="el-icon-edit"></i>
+  <el-icon name="share"></el-icon>
+  <el-icon name="delete"></el-icon>
+</span>
+<el-button type="primary" icon="search">搜索</el-button>
